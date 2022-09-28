@@ -5,7 +5,9 @@
 \paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 
-\f0\fs24 \cf0 PREFIX : <http://example.org/>\
+\f0\fs24 \cf0 #+ endpoint: http://127.0.0.1:7200/repositories/Social-history\
+\
+PREFIX : <http://example.org/>\
 PREFIX thesoz: <http://lod.gesis.org/thesoz/concept/>\
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\
 PREFIX geo: <http://www.opengis.net/ont/geosparql#>\
@@ -15,5 +17,4 @@ select distinct ?country ?pred ?city where \{ \
 	?claim :macro-levelAssociation/rdf:object ?c .\
     ?claim :spatialContext ?city . \
     ?country ?pred ?city .\
-\} limit 100 \
-}
+\} }
