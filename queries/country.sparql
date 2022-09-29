@@ -1,7 +1,7 @@
 #+ endpoint: https://api.druid.datalegend.net/datasets/lisestork/SocialHistoryClaims/services/SocialHistoryClaims/sparql
-#+ enumerate: 
-#+ 	- capital: 
-#+		- https://iisg.amsterdam/resource/capital/Stockholm
+# enumerate: 
+# 	- capital: 
+#		- https://iisg.amsterdam/resource/capital/Stockholm
 
 PREFIX : <http://example.org/>
 PREFIX thesoz: <http://lod.gesis.org/thesoz/concept/>
