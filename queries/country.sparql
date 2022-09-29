@@ -10,7 +10,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX geo: <http://www.opengis.net/ont/geosparql#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX iisgv: <https://iisg.amsterdam/vocab/>
-select distinct ?wkt ?city where { 
+select distinct ?wkt ?claim where { 
 	?claim :macro-levelAssociation/rdf:subject thesoz:10050647 ;
 	       :macro-levelAssociation/rdf:object thesoz:10048839 ;
            :spatialContext ?capital .
