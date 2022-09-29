@@ -1,5 +1,5 @@
 #https://api.druid.datalegend.net/datasets/lisestork/SocialHistoryClaims/services/SocialHistoryClaims/sparql
-#+ endpoint: http://localhost:7200/repositories/Social-history
+#+ endpoint: http://127.0.0.1:7200/repositories/Social-history
 #+ pagination: 10
 
 PREFIX : <http://example.org/>
