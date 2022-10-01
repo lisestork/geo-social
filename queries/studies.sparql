@@ -1,0 +1,16 @@
+#+ endpoint: https://api.druid.datalegend.net/datasets/lisestork/SocialHistoryClaims/services/SocialHistoryClaims/sparql
+#+ method: GET
+#select a micro-claim related to dependent variable X, and independent variable Y, and show the literature related to the claim, and the confidence values 
+
+PREFIX : <http://example.org/>
+PREFIX thesoz: <http://lod.gesis.org/thesoz/concept/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX geo: <http://www.opengis.net/ont/geosparql#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX iisgv: <https://iisg.amsterdam/vocab/>
+select distinct ?source ?variable ?effectSize where { 
+	?claim :dependentVariable/:measuredVariable ?variable ;
+           :dependentVariable/:proxyFor thesoz:10048839 ; 
+           :source/rdfs:label ?source ;
+           :effectSize ?effectSize .
+} 
